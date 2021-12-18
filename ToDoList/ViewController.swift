@@ -36,9 +36,7 @@ class ViewController : UITableViewController ,addItemDeleget{
                 formatter.dateFormat = "dd/MM/yyyy"
 
             var Dates = formatter.string(from: Tasks[indexPath.row].dueDate!)
-      //  var Dates:String? = "\(Tasks[indexPath.row].dueDate!)"
-           // cell.detailTextLabel?.text=Dates
-           // cell.disc = Tasks[indexPath.row].taskDescription!
+      
             cell.Tasktext.text = Tasks[indexPath.row].text!
             cell.date.text = Dates
             cell.disc.text = Tasks[indexPath.row].taskDescription

@@ -122,6 +122,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveBtn:" destination="CgG-bZ-VD4" eventType="touchUpInside" id="GT1-2G-GbA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8o1-dU-jb3"/>
@@ -145,18 +148,7 @@
                             <constraint firstItem="8o1-dU-jb3" firstAttribute="trailing" secondItem="05p-4a-Ofx" secondAttribute="trailing" constant="40" id="xHC-YR-ZX9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7os-ce-Kc8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QAT-JV-eP5">
-                            <connections>
-                                <action selector="cancelBtn:" destination="CgG-bZ-VD4" id="hEh-wt-Itt"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RZH-hr-IpY">
-                            <connections>
-                                <action selector="saveBtn:" destination="CgG-bZ-VD4" id="M21-U8-0cF"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="7os-ce-Kc8"/>
                     <connections>
                         <outlet property="discrpFiled" destination="05p-4a-Ofx" id="11H-gK-n5c"/>
                         <outlet property="dueDate" destination="hhf-Q4-hCH" id="6Bx-yb-oNg"/>

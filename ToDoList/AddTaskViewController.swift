@@ -42,17 +42,15 @@ class AddTaskViewController: UIViewController {
   //  }
     
     @IBOutlet weak var dueDate: UIDatePicker!
-    @IBAction func cancelBtn(_ sender: UIBarButtonItem) {
-        delegate?.cancleButtonPreesed(by: self)
-
-    }
     
-    @IBAction func saveBtn(_ sender: UIBarButtonItem) {
+    
+    @IBAction func saveBtn(_ sender: UIButton) {
         let Text=textFiled.text!
         let date=dueDate.date
         let dis=discrpFiled.text!
         
         delegate?.saveItem(by: self,with:Text, with: date ,with:dis ,at:indexPath)
+        //delegate?.cancleButtonPreesed(by: self)
 
     }
     
